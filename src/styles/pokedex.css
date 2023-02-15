@@ -1,0 +1,24 @@
+.pokedexPage {
+    width: 100%;
+    height: 100vh;
+    min-height: 100dvh;
+}
+
+.pokedexPage header {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-color:brown;
+}
+
+.pokedexPage main {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax( 10rem, 1fr ));
+    place-items: center;
+    gap: 1rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem;
+}

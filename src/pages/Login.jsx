@@ -1,5 +1,5 @@
 import '../styles/login.css';
-import pikachu from '../assets/pikachu.gif'
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import arrowRight from '../assets/arrow-right.svg'
 import arrowLeft from '../assets/arrow-left.svg'
@@ -7,7 +7,6 @@ import arrowUp from '../assets/arrow-up.svg'
 import arrowDown from '../assets/arrow-down.svg'
 import { useDispatch, useSelector } from 'react-redux';
 import { getPokemons } from '../store/slices/pokemons';
-import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { getTrainerName } from '../store/slices/trainerName';
 
@@ -33,7 +32,7 @@ const Login = () => {
     };
 
     useEffect( () => {
-        axios.get('https://pokeapi.co/api/v2/pokemon/?limit=1279').then( res => dispatch( getPokemons( res.data.results ) ))
+        axios.get('https://pokeapi.co/api/v2/pokemon/?limit=100').then( res => dispatch( getPokemons( res.data.results ) ))
     }, [])
 
     useEffect( () => {
@@ -65,7 +64,7 @@ const Login = () => {
                     <button onClick={ randomNumberMinus } className='left btn arrow'> <img src={ arrowLeft }/> </button>
                     <button onClick={ changeRandomNumber } className='up btn arrow'> <img src={ arrowUp }/> </button>
                     <button onClick={ changeRandomNumber } className='down btn arrow'> <img src={ arrowDown }/> </button>
-                    <button className='x btn'></button>
+                    <button onClick={ () => setName('') } className='x btn'></button>
                     <button onClick={ goPokemons } className='check btn'></button>
                 </figure>
             </div>
