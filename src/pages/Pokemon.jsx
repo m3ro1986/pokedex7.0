@@ -18,19 +18,27 @@ const Pokemon = () => {
         <div className={`pokemonBox ${pokemon.types?.[0].type?.name}`}>
             <h2>{pokemon.name}</h2>
             <img src={pokemon.sprites?.other.dream_world.front_default} alt="" />
-
-            <div className='pokemonInfo'>
-                <span> {pokemon.height / 10} meters </span>
-                <span> {pokemon.weight / 10} kilos </span>
-                <ul>
+            <div>
+                <ul className='types'>
                     {
                         pokemon.types?.map(e => (
-                            <li key={e.type.name}>
+                            <li key={e.type.name} className={`${e.type?.name}`}>
                                 {e.type.name}
                             </li>
                         ))
                     }
                 </ul>
+
+            </div>
+
+            <span> {pokemon.height / 10} meters </span>
+            <span> {pokemon.weight / 10} kilos </span>
+
+
+
+            <div className='pokemonInfo'>
+
+
                 <h3>stats</h3>
                 <ul className='stats'>
                     <li>

@@ -2,6 +2,20 @@
     min-height: 100vh;
 }
 
+.types {
+    display: flex;
+    max-width: 425px;
+    min-width: 375px;
+    justify-content: space-around;
+}
+
+.types li {
+    background-color: aliceblue;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
+
 
 .stats {
     max-width: 425px;
