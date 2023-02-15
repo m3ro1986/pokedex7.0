@@ -1,0 +1,129 @@
+.loginBox {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/forest.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(8px);
+}
+
+.pokedex {
+    position: relative;
+    width: 350px;
+    height: 525px;
+    background-image: url('../assets/pokedex.jpg');
+    border-radius: 12px;
+}
+
+.pokedex p {
+   position: absolute;
+   padding: 2.5rem;
+   top: 4.5rem;
+   text-align: center;
+}
+
+.pokedex > div {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 108px;
+    left: 22px;
+    height: 24px;
+    width: 307px;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: #fff;
+    font-size: 10px;
+}
+
+.pokedex > input {
+    position: absolute;
+    bottom: 200px;
+    left: 37px;
+    height: 24px;
+    width: 275px;
+    text-align: center;
+}
+
+.pokedex > span {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 151px;
+    height: 71px;
+    background-color: #fff;
+    bottom: 25px;
+    left: 109px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.check {
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    bottom: 33px;
+    right: 25px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.x {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    bottom: 72px;
+    right: 47px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.arrow {
+    display: flex;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+.arrow img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.right {
+    bottom: 50px;
+    left: 72px;
+}
+
+.left {
+    bottom: 50px;
+    left: 31px;
+}
+
+.down {
+    bottom: 30px;
+    left: 51px; 
+}
+
+.up {
+    bottom: 71px;
+    left: 51px; 
+}
+
+
+
