@@ -24,7 +24,7 @@ const Pokedex = () => {
         <div className='pokedexPage'>
             <header>
                 <p> Welcome <span>{ trainerName }</span>, here you can find your favorite POKEMON!!!</p>
-                <i class='bx bxs-left-arrow'></i>
+                <i className='bx bxs-left-arrow'></i>
             </header>
             <main>
                 {

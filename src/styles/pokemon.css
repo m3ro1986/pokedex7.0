@@ -1,3 +1,36 @@
 .pokemonBox {
     height: 100vh;
 }
+
+
+.stats {
+    max-width: 425px;
+    min-width: 375px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.stats li {
+    display: flex;
+    font-size: 12px;
+}
+
+.stats li > span {
+    width: 35%;
+}
+
+.stats li > div {
+    width: 65%;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
+
+.stats li > div > div {
+    display: flex;
+    justify-content: end;
+    padding: 0 0.5rem;
+    border-radius: 1rem;
+    border-right: 1px solid black;
+}

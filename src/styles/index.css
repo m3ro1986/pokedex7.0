@@ -7,6 +7,10 @@
     font-family: 'Press Start 2P', cursive;
 }
 
+li {
+    list-style: none;
+}
+
 .bx:hover {
     cursor: pointer;
 }

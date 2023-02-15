@@ -9,11 +9,12 @@
     text-align: center;
     border-radius: 1rem;
     box-shadow: 0 0 15px gray;
-    transition: all 3s;
+    transition: transform 0.5s
 }
 
 .pokecardBox:hover {
     cursor: pointer;
+
 }
 
 .pokecardBox figure {
